@@ -1,0 +1,7 @@
+.mainContent {
+  height: 300px;
+  background-color: rgb(198, 204, 206);
+}
+ul li {
+  list-style-type: none;
+}

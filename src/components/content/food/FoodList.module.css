@@ -1,0 +1,18 @@
+.contentList {
+  padding: 16px;
+}
+
+.content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.foodItem {
+  border-bottom: 1px solid orange;
+  margin-bottom: 4px;
+}
+
+.foodFont {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
