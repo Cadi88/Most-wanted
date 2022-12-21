@@ -26,7 +26,7 @@ const FoodList = () => {
       <div className={foodStyles.content}>
         <ul>
           <h2>Food list</h2>
-          {listItem}
+          {listItem}.
         </ul>
       </div>
     </div>
