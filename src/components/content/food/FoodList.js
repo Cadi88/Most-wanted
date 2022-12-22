@@ -56,10 +56,10 @@ const FoodList = () => {
       <span>{finalPrice}</span>
       <Group position="center">
         <Button uppercase variant="outline" onClick={decreasePricehandler}>
-          decrement price
+          Decrement price
         </Button>
         <Button uppercase variant="outline" onClick={increasePricehandler}>
-          increment price
+          Increment price
         </Button>
       </Group>
     </div>
