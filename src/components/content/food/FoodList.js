@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import foodStyles from "./FoodList.module.css";
 import FoodItem from "./FoodItem";
+import { Button, Group } from "@mantine/core";
 
 const FoodList = () => {
   const [finalPrice, setFinalPrice] = useState(0);
@@ -33,7 +34,7 @@ const FoodList = () => {
     let increasedPrice = finalPrice + 1;
     setFinalPrice(increasedPrice);
   };
-  
+
   const decreasePricehandler = () => {
     let decreasedPrice = finalPrice - 1;
 
@@ -53,20 +54,14 @@ const FoodList = () => {
         </ul>
       </div>
       <span>{finalPrice}</span>
-      <div className={foodStyles.buttonContainer}>
-        <button
-          className={foodStyles.priceButton}
-          onClick={decreasePricehandler}
-        >
+      <Group position="center">
+        <Button uppercase variant="outline" onClick={decreasePricehandler}>
           decrement price
-        </button>
-        <button
-          className={foodStyles.priceButton}
-          onClick={increasePricehandler}
-        >
+        </Button>
+        <Button uppercase variant="outline" onClick={increasePricehandler}>
           increment price
-        </button>
-      </div>
+        </Button>
+      </Group>
     </div>
   );
 };
