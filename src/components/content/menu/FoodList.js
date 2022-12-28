@@ -53,7 +53,6 @@ const FoodList = () => {
           {listItem}
         </ul>
       </div>
-      <span>{finalPrice}</span>
       <Group position="center">
         <Button uppercase variant="outline" onClick={decreasePricehandler}>
           decrement price

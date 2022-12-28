@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const LinkButton = ({ children }) => {
-  return <a href="#" style={{ color: "white" }}>{children}</a>;
+const LinkButton = ({route, children }) => {
+  return <Link to={route} style={{ color: "white" }}>{children}</Link>;
 };
 
 export default LinkButton;
