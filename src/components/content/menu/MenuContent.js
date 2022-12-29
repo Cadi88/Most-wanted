@@ -2,7 +2,7 @@ import React from "react";
 import mainStyles from "./MainContent.module.css";
 import FoodList from "./FoodList";
 
-const MainContent = () => {
+const MenuContent = () => {
   return (
     <div className={mainStyles.mainContent}>
       <FoodList />
@@ -10,4 +10,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default MenuContent;

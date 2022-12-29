@@ -4,7 +4,9 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Phone Number 123456 • Av. 1 • By Rodrigo
+      <h3>We're Here for You</h3>
+      <span>First Avenue 763 | 0800 100077 mostwanted_b@mostwanted.com | © All
+      rights reserved 2023</span>
     </footer>
   );
 };
