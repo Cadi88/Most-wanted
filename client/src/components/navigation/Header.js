@@ -12,9 +12,11 @@ const Header = () => {
 
   return (
     <div className={styles.navHeader}>
-      <div className={styles.smLogo}>
-        <Image radius="md" src={mwLogo} alt="Most wanted" />
-      </div>
+      <LinkButton route='/'>
+        <div className={styles.smLogo}>
+          <Image radius="md" src={mwLogo} alt="Most wanted" />
+        </div>
+      </LinkButton>
       <LinkButton route="/api/menu">{textLink2}</LinkButton>
       <LinkButton route="/contactus">{textLink3}</LinkButton>
     </div>
