@@ -1,25 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import foodStyles from "./FoodList.module.css";
 import FoodItem from "./FoodItem";
-import { Button, Group } from "@mantine/core";
 
 const FoodList = () => {
-  const [finalPrice, setFinalPrice] = useState(0);
+  const [menu, setMenu] = useState([]);
 
-  const FOODS = [
-    { id: 1, name: "pizza", desc: "a tasty pizza", price: 9.99 },
-    { id: 2, name: "burger", desc: "a tasty burger", price: 6.99 },
-    { id: 3, name: "sushi", desc: "a tasty sushi", price: 12.99 },
-    {
-      id: 4,
-      name: "chicken wings",
-      desc: "a tasty chicken wings",
-      price: 12.99,
-    },
-    { id: 5, name: "menudito", desc: "a tasty menudito", price: 5.99 },
-  ];
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/menu")
+      .then((res) => {
+        setMenu(res.data);
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
-  const listItem = FOODS.map((food) => {
+  const listItem = menu.map((food) => {
     return (
       <FoodItem
         key={food.id}
@@ -30,21 +27,6 @@ const FoodList = () => {
     );
   });
 
-  const increasePricehandler = () => {
-    let increasedPrice = finalPrice + 1;
-    setFinalPrice(increasedPrice);
-  };
-
-  const decreasePricehandler = () => {
-    let decreasedPrice = finalPrice - 1;
-
-    if (decreasedPrice <= 0) {
-      setFinalPrice(0);
-    } else {
-      setFinalPrice(decreasedPrice);
-    }
-  };
-
   return (
     <div className={foodStyles.contentList}>
       <div className={foodStyles.content}>
@@ -53,14 +35,6 @@ const FoodList = () => {
           {listItem}
         </ul>
       </div>
-      <Group position="center">
-        <Button uppercase variant="outline" onClick={decreasePricehandler}>
-          decrement price
-        </Button>
-        <Button uppercase variant="outline" onClick={increasePricehandler}>
-          increment price
-        </Button>
-      </Group>
     </div>
   );
 };
