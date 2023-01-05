@@ -2,8 +2,8 @@
   font-size: 1.5rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
-
 }
+
 .span {
   text-align: center;
 }
@@ -13,17 +13,16 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: 0;
-  height: 90px;
-  background: linear-gradient(rgb(237, 132, 5), rgb(255, 204, 0), rgb(250, 150, 1));
+  background: transparent;
   width: 100%;
   text-align: center;
   align-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding-top: 10px;
+  padding: 16px 0;
+  color: white;
 }
 
-.socialIcons{
+.socialIcons {
   padding-top: 5px;
   font-size: 25px;
   margin-left: 10px;
