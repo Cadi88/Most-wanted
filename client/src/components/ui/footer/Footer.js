@@ -12,10 +12,10 @@ const Footer = () => {
       </span>
       <div className={styles.socialIcons}>
         <a href="https://www.facebook.com/mostwantedburgers">
-          <FontAwesomeIcon icon={faFacebook} color="orange"/> 
+          <FontAwesomeIcon icon={faFacebook} color="white"/> 
         </a>
         <a href="https://www.instagram.com/mostwantedburgers">
-          <FontAwesomeIcon icon={faInstagram} color="orange"/>
+          <FontAwesomeIcon icon={faInstagram} color="white"/>
         </a>
       </div>
     </footer>
