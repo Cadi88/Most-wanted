@@ -1,6 +1,6 @@
 .bgImg {
   background-image: url("../../../assets/img/MostWanted_Landing_bck.png");
   background-size: cover;
-  height: calc(100vh - 70px);
+  height: 100vh;
   overflow-y: hidden;
 }

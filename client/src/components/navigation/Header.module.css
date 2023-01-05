@@ -1,10 +1,11 @@
 .navHeader {
+  position: fixed;
   display: flex;
   justify-content:end;
   align-items: center;
   height: 70px;
   width: 100%;
-  background: linear-gradient(rgb(2, 201, 28), rgb(7, 138, 2), rgb(2, 201, 28));
+  background-color: transparent;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
