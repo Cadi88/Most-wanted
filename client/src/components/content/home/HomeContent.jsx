@@ -1,9 +1,10 @@
 import React from "react";
+import styles from './HomeContent.module.css'
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home content</h1>
+    <div className={styles.bgImg}>
+    
     </div>
   );
 };

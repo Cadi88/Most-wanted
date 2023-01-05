@@ -2,7 +2,7 @@ import React from "react";
 import stylesHeader from "./Header.module.css";
 import LinkButton from "./LinkButton";
 import { Route } from "react-router-dom";
-import logoMw from "../../assets/font-graffiti-MW-logo.png";
+import logoMw from "../../assets/img/font-graffiti-MW-logo.png";
 
 const Header = () => {
   let textLink1 = "Home";
