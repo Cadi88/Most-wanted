@@ -1,6 +1,6 @@
 .mainContent {
-  height: calc(100vh - 50px);
-  background-color: rgb(198, 204, 206);
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
 }
 
 ul li {
