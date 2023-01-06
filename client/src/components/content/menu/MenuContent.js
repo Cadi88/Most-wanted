@@ -1,5 +1,6 @@
 import React from "react";
 import mainStyles from "./MainContent.module.css";
+
 import FoodList from "./FoodList";
 
 const MenuContent = () => {
