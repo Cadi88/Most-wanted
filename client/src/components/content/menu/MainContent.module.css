@@ -6,3 +6,10 @@
 ul li {
   list-style-type: none;
 }
+
+ul h2 p {
+  color: #ea5709;
+  font-weight: 600;
+  font-size: medium;
+  margin-bottom: 16px;
+}

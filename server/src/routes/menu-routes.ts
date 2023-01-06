@@ -3,9 +3,9 @@ import express from "express";
 const router = express.Router();
 
 const FOODS = [
-  { id: '1', name: "pizza", desc: "a tasty pizza", price: 9.99 },
-  { id: '2', name: "burger", desc: "a tasty burger", price: 6.99 },
-  { id: '3', name: "sushi", desc: "a tasty sushi", price: 12.99 },
+  { id: '1', name: "Rs Burger", desc: "6oz of Meat", price: 9.99 },
+  { id: '2', name: "GTR Burger", desc: "8oz of Meat", price: 6.99 },
+  { id: '3', name: "NISMO GT Burger", desc: "10oz of can you deal with it?", price: 12.99 },
   {
     id: '4',
     name: "chicken wings",
