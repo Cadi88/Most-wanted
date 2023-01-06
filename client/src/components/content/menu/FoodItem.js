@@ -15,4 +15,5 @@ const FoodItem = ({ itemName, itemDesc, itemPrice }) => {
   );
 };
 
+
 export default FoodItem;

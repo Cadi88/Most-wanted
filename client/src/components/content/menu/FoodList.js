@@ -50,6 +50,15 @@ const FoodList = () => {
           {listItem}
         </ul>
       </div>
+      
+      <div className={foodStyles.contentList}>
+        <div className={foodStyles.content}>
+          <ul>
+            <h2>Food list</h2>
+            {listItem}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
