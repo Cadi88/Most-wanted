@@ -27,7 +27,7 @@ const Header = () => {
         <FontAwesomeIcon
           icon={faSearch}
           color="white"
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", margin: '30px' }}
         />
       </div>
     </div>

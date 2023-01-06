@@ -1,18 +1,16 @@
-.bgImg {
+.mainContainer {
   background-image: url("../../../assets/img/MostWanted_Landing_bck.png");
   background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
-}
-
-.mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75vh;
-  margin-top: 8%;
+}
+
+.content {
+  width: 100%;
 }
 
 .logoContainer {
@@ -20,7 +18,7 @@
   justify-content: center;
   align-items: center;
   width: 45%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 .contentDescription {
@@ -34,8 +32,45 @@
   width: 50%;
 }
 
+.bottomDescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .divider {
   color: white;
-  width: 70%;
+  width: 80%;
   margin: 8px;
+}
+
+@media (max-height: 500px) {
+  .imgContainer {
+    width: 20%;
+  }
+
+  .logoContainer {
+    width: 40%;
+    margin: 0 auto 10px;
+  }
+
+  .contentDescription {
+    margin: 12px;
+  }
+}
+
+@media (min-height: 501px) and (max-height: 630px) {
+  .imgContainer {
+    width: 30%;
+  }
+
+  .logoContainer {
+    width: 40%;
+    margin: 0 auto 12px;
+  }
+
+  .contentDescription {
+    margin: 16px;
+  }
 }
