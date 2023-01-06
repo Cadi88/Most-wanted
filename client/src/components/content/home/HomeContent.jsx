@@ -7,11 +7,12 @@ import burgersImg from "../../../assets/img/burgers.png";
 
 const Home = () => {
   return (
-    <div className={styles.bgImg}>
-      <div className={styles.mainContainer}>
+    <div className={styles.mainContainer}>
+      <div className={styles.content}>
         <div className={styles.logoContainer}>
           <Image src={logo} alt="Most wanted" />
         </div>
+
         <div className={styles.contentDescription}>
           <p style={{ color: "white" }}>
             <span style={{ color: "#ea5709" }}>Best burgers in the town</span>
@@ -22,9 +23,12 @@ const Home = () => {
             <Image src={burgersImg} />
           </div>
         </div>
-        <div style={{color: 'white'}}> asd asd asd asd asd </div>
-        <hr className={styles.divider}/>
-        <div style={{color: 'white'}}> asd asd asd asd asd </div>
+
+        <div className={styles.bottomDescription}>
+          <div style={{ color: "white" }}> asd asd asd asd asd </div>
+          <hr className={styles.divider} />
+          <div style={{ color: "white" }}> asd asd asd asd asd </div>
+        </div>
       </div>
     </div>
   );
