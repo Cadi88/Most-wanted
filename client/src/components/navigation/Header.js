@@ -1,5 +1,7 @@
 import React from "react";
 import { Image } from "@mantine/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Header.module.css";
 import LinkButton from "./LinkButton";
@@ -12,13 +14,22 @@ const Header = () => {
 
   return (
     <div className={styles.navHeader}>
-      <LinkButton route='/'>
-        <div className={styles.smLogo}>
-          <Image radius="md" src={mwLogo} alt="Most wanted" />
-        </div>
-      </LinkButton>
-      <LinkButton route="/api/menu">{textLink2}</LinkButton>
-      <LinkButton route="/contactus">{textLink3}</LinkButton>
+      <div className={styles.buttonsContainer}>
+        <LinkButton route="/">
+          <div className={styles.smLogo}>
+            <Image src={mwLogo} alt="Most wanted" />
+          </div>
+        </LinkButton>
+        <LinkButton route="/api/menu">{textLink2}</LinkButton>
+        <LinkButton route="/contactus">{textLink3}</LinkButton>
+      </div>
+      <div>
+        <FontAwesomeIcon
+          icon={faSearch}
+          color="white"
+          style={{ cursor: "pointer" }}
+        />
+      </div>
     </div>
   );
 };

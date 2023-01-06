@@ -1,17 +1,22 @@
 .navHeader {
+  width: 80%;
   display: flex;
   position: fixed;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 100%;
   background-color: transparent;
   color: black;
-  margin: 0 10%;
+  margin: 0 auto;
 }
 
-.navHeader > * {
-  margin: 0 50px;
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.buttonsContainer > * {
+  margin: 0 25px;
 }
 
 .logoMostWanted {
