@@ -7,13 +7,15 @@ const FoodItem = ({ itemName, itemDesc, itemPrice }) => {
   return (
     <li className={styles.foodItem}>
       <div className={styles.itemContainer}>
-        <Checkbox/>
-        <span className={styles.itemName}>{itemName}</span> <i>{itemDesc}</i>
-        <span className={styles.foodFont}>{itemPrice}</span>$
+        <div className={styles.selectBox}>
+          <Checkbox />
+          <span className={styles.itemName}>{itemName}</span>
+        </div>
+        <i>{itemDesc}</i>
+        <span className={styles.foodFont}>{itemPrice}$</span>
       </div>
     </li>
   );
 };
-
 
 export default FoodItem;

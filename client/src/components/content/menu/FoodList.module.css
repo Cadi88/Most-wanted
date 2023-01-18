@@ -36,6 +36,15 @@
 
 .itemContainer {
   display: flex;
+  justify-content: space-between;
+}
+
+.selectBox {
+  display: flex;
+}
+
+.selectBox :first-child {
+  margin-right: 4px ;
 }
 
 .itemName {
