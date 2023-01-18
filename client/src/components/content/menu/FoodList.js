@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Checkbox } from '@mantine/core';
+import { Checkbox } from "@mantine/core";
 
 import foodStyles from "./FoodList.module.css";
 import FoodItem from "./FoodItem";
@@ -18,46 +18,34 @@ const FoodList = () => {
       .catch((err) => console.log(err));
   }, []);
 
-
-
-//     <Checkbox checked={false} label="Default checkbox" />
-
-
-
   const listItem = menu.map((food) => {
     return (
-        <FoodItem
+      <FoodItem
         key={food.id}
         itemName={food.name}
         itemDesc={food.desc}
         itemPrice={food.price}
       />
-      
-      );
+    );
   });
 
   return (
     <div className={foodStyles.contentList}>
       <div className={foodStyles.content}>
         <ul>
-          <h2>Food list<p> (JUST BREAD & MEAT PRICE)</p></h2>
+          <h2>
+            Food list<p> (JUST BREAD & MEAT PRICE)</p>
+          </h2>
           {listItem}
         </ul>
       </div>
       <div className={foodStyles.content}>
         <ul>
-          <h2>Sauces list<p> (IMPROVE YOUR BURGER PERFORMANCE)</p></h2>
+          <h2>
+            Sauces list<p> (IMPROVE YOUR BURGER PERFORMANCE)</p>
+          </h2>
           {listItem}
         </ul>
-      </div>
-      
-      <div className={foodStyles.contentList}>
-        <div className={foodStyles.content}>
-          <ul>
-            <h2>Food list</h2>
-            {listItem}
-          </ul>
-        </div>
       </div>
     </div>
   );
