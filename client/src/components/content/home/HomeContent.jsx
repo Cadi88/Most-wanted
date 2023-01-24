@@ -14,11 +14,14 @@ const Home = () => {
         </div>
 
         <div className={styles.contentDescription}>
-          <p style={{ color: "white" }}>
-            <span style={{ color: "#ea5709" }}>Best burgers in the town</span>
-            <br /> Extra Quality Meat powered <br />
-            by the best Sauces in Market
-          </p>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <span>Best burgers in the town</span>
+            <span style={{ color: "white" }}>
+              Extra Quality Meat powered <br />
+              by the best Sauces in Market
+            </span>
+          </div>
+
           <div className={styles.imgContainer}>
             <Image src={burgersImg} />
           </div>
