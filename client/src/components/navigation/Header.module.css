@@ -1,3 +1,8 @@
+.burgerMenuContainer {
+  width: 100%;
+  display: none;
+}
+
 .navHeader {
   width: 80%;
   display: flex;
@@ -29,4 +34,16 @@
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   padding: 10px;
+}
+
+@media (max-width: 390px) {
+  .buttonsContainer {
+    width: 100%;
+    display: none;
+  }
+
+  .burgerMenuContainer {
+    width: 100%;
+    display: inline-block;
+  }
 }

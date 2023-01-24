@@ -28,8 +28,13 @@
   margin: 24px 0;
 }
 
+.contentDescription div span:first-child {
+  color: #ea5709;
+  margin-left: -16px;
+}
+
 .imgContainer {
-  width: 50%;
+  width: 35%;
 }
 
 .bottomDescription {
@@ -43,6 +48,21 @@
   color: white;
   width: 80%;
   margin: 8px;
+}
+
+@media (max-width: 390px) {
+  .logoContainer {
+    width: 80%;
+  }
+
+  .contentDescription {
+    flex-direction: column-reverse;
+  }
+
+  .contentDescription div span:first-child {
+    margin-left: 0 !important;
+    text-align: center;
+  }
 }
 
 @media (max-height: 500px) {
