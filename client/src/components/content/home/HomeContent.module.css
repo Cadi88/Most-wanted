@@ -31,6 +31,8 @@
 .contentDescription div span:first-child {
   color: #ea5709;
   margin-left: -16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .imgContainer {
