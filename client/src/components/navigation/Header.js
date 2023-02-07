@@ -1,7 +1,8 @@
 import React from "react";
 import { Image } from "@mantine/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import NeonButton from "../ui/neonButton/NeonButton";
 
 import styles from "./Header.module.css";
 import LinkButton from "./LinkButton";
@@ -14,7 +15,6 @@ const Header = () => {
 
   return (
     <div className={styles.navHeader}>
-
       <div className={styles.buttonsContainer}>
         <LinkButton route="/">
           <div className={styles.smLogo}>
@@ -34,14 +34,7 @@ const Header = () => {
         />
       </div>
 
-      <div>
-        <FontAwesomeIcon
-          icon={faSearch}
-          size="lg"
-          color="white"
-          style={{ cursor: "pointer", margin: "30px" }}
-        />
-      </div>
+      <div>{/* may we will add buttons here */}</div>
     </div>
   );
 };

@@ -14,3 +14,10 @@ ul h2 p {
   font-size: medium;
   margin-bottom: 16px;
 }
+
+.neonButton {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  
+}

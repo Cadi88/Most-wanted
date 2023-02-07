@@ -8,7 +8,9 @@ const MenuContent = () => {
   return (
     <div className={mainStyles.mainContent}>
       <FoodList />
-      <NeonButton />
+      <div className={mainStyles.neonButton}>
+        <NeonButton />
+      </div>
     </div>
   );
 };
