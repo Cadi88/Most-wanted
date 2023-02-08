@@ -5,7 +5,7 @@ import { Checkbox } from "@mantine/core";
 import foodStyles from "./FoodList.module.css";
 import FoodItem from "./FoodItem";
 
-const FoodList = () => {
+const FoodList = ({listName, listDesc}) => {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
@@ -39,14 +39,14 @@ const FoodList = () => {
           {listItem}
         </ul>
       </div>
-      <div className={foodStyles.content}>
+    {/*   <div className={foodStyles.content}>
         <ul>
           <h2>
             Sauces list<p> (IMPROVE YOUR BURGER PERFORMANCE)</p>
           </h2>
           {listItem}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
