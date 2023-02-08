@@ -1,3 +1,32 @@
+.foodItem {
+  border-bottom: 1px solid orange;
+  margin-bottom: 4px;
+}
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.selectBox {
+  display: flex;
+  width: 25%;
+  align-items: center;
+}
+.itemName {
+  width: 30%;
+  min-width: 20%;
+}
+.foodPrice {
+  text-align: right;
+  width: 3%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@media (min-width:1200px) {
+  
+}
+
+
+
 .contentList {
   padding: 66px;
 }
@@ -8,23 +37,11 @@
   border-radius: 8px;
   padding: 8px;
 }
-
-.foodItem {
-  border-bottom: 1px solid orange;
-  margin-bottom: 4px;
-}
-
-.foodFont {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-left: 8px;
-}
-
 .buttonContainer {
   margin-top: 8px;
   display: flex;
   justify-content: center;
 }
-
 .priceButton {
   cursor: pointer;
   height: 32px;
@@ -33,20 +50,11 @@
   border-radius: 8px;
   border-color: rgb(95, 76, 190);
 }
-
-.itemContainer {
-  display: flex;
-  justify-content: space-between;
+.itemContainer i {
+  justify-content: center;
+  width: 40%;
 }
 
-.selectBox {
-  display: flex;
-}
 
-.selectBox :first-child {
-  margin-right: 4px ;
-}
 
-.itemName {
-  min-width: 20%;
-}
+
